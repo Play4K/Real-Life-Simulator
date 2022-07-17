@@ -155,7 +155,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dll\VerticalProgressBar.dll" />
+    <Content Include="Dll\XanderUI.dll" />
     <Content Include="Project Plans.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
