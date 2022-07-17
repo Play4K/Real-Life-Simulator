@@ -1,0 +1,47 @@
+﻿- SPIEL
+	OFFEN	-> Speicherfunktion (Neu erstelltes Spiel mit allen Informationen speichern können)
+	OFFEN	-> Tag und Nacht
+	OFFEN	-> Ingame Zeit
+	OFFEN	-> Essen, Trinken, Schlafen
+	OFFEN	-> AI-Mensch mit Sprechfunktion
+	OFFEN	-> Sprechfunktion
+	OFFEN	-> Schule
+	OFFEN	-> Ausbildung
+	OFFEN	-> Karrieremöglichkeit
+	OFFEN	-> Wasser, Wärme, Stromkosten, etc..
+
+- CHARAKTER
+	OFFEN	-> Alterfunktion
+	OFFEN	-> Gesundheitssystem: Hunger, Durst, Schlaf, Krankheiten
+	OFFEN	-> Charaktereigenschaften (vorteilhaft und nachteilhaft, jede Eigenschaft hat auch Stufen, in bestimmten Situationen werden bestimmte Eigenschaften auch gebraucht)
+	OFFEN	-> Körpertemperatur
+	OFFEN	-> Kleidung Anziehfunktion -> Körpertemperatur
+	OFFEN	-> Krankheitssystem, für jede Krankheit gibt es auch Gegenmittel (von Real-Life nachmachen)
+	OFFEN	-> Emotionen, Gefühle, Laune (steigert/verringert abhängig von vielen verschiedenen Paramtern)
+	OFFEN	-> Wissen in verschiedenste Bereiche können erlangt werden und sind Stufenweise (Wissenslevelmäßig) festgesetzt,
+					das Wissen kann durch lesen von Büchern, in dem Bereich arbeiten, etc gesteigert werden
+	OFFEN	-> Körperbau (wird noch überlegt)
+
+- FINAZIELL
+	OFFEN	-> Arbeitsmöglichkeit
+	OFFEN	-> Geld kann verdient werden
+	OFFEN	-> Banking-System
+	OFFEN	-> Eigene Geschäfte/Lokale können geöffnet werden womit Idle Geld verdient werden kann (doch es auch gepflegt (gekümmert werden, damit das Geschäft läuft, sowie 1x Mitarbeiter eingestellt wenn man selber nicht
+					im Geschäft/Lokal ist, damit Idle auch Geld verdient werden kann))
+
+
+- GRUNDSTÜCK-MANAGEMENT
+	OFFEN	-> Haus, Land kaufen
+	OFFEN	-> Haus mieten
+	OFFEN	-> Möbel kaufen
+
+- MAPS
+	OFFEN	-> Keine Instant-Reise Möglichkeit, alles braucht Zeit um den Ort zu erreichen (STANDARD: 2m pro 1s | 1m pro 0,5sek = zu Fuß)
+
+
+
+Spielfunktionen (beschrieben):
+	# Spiel beginnt als ein Weisenkind (ohne Eltern, in dem es mit Hürden verbunden ist, Alter wird noch überlegt)
+	# Man beginnt bei einem Spawnpunkt, von dort aus wenn mein Reisen möchte oder sich allgemein bewegen möchte,
+					hinterlegt man eine Strecke, diese Strecke wird standardmäßig zu Fuß hinterlegt, sollte man ein
+					Fahrrad, Auto, Bus, Zug, Flugzeug haben kann man schneller sein
