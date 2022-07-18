@@ -62,11 +62,23 @@
     <Compile Include="CharacterCreator.Designer.cs">
       <DependentUpon>CharacterCreator.cs</DependentUpon>
     </Compile>
+    <Compile Include="CharacterMenuCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CharacterMenuCtrl.Designer.cs">
+      <DependentUpon>CharacterMenuCtrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameWindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GameWindow.Designer.cs">
       <DependentUpon>GameWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameWindowCtrlNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameWindowCtrlNew.Designer.cs">
+      <DependentUpon>GameWindowCtrlNew.cs</DependentUpon>
     </Compile>
     <Compile Include="MapForms\BankControl.cs">
       <SubType>UserControl</SubType>
@@ -111,8 +123,14 @@
     <EmbeddedResource Include="CharacterCreator.resx">
       <DependentUpon>CharacterCreator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CharacterMenuCtrl.resx">
+      <DependentUpon>CharacterMenuCtrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameWindowCtrlNew.resx">
+      <DependentUpon>GameWindowCtrlNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MapForms\BankControl.resx">
       <DependentUpon>BankControl.cs</DependentUpon>
@@ -157,7 +175,10 @@
   <ItemGroup>
     <Content Include="Dll\VerticalProgressBar.dll" />
     <Content Include="Dll\XanderUI.dll" />
-    <Content Include="Project Plans.txt" />
+    <Content Include="Ideen\GameWindow New.jpg" />
+    <Content Include="Projekt Päne.txt" />
+    <Content Include="Regeln.txt" />
+    <Content Include="Änderungen.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
