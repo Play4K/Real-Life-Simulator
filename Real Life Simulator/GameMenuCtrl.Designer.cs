@@ -58,6 +58,7 @@ namespace Real_Life_Simulator
             this.Btn_ExitGame.TabIndex = 1;
             this.Btn_ExitGame.Text = "Exit Game";
             this.Btn_ExitGame.UseVisualStyleBackColor = false;
+            this.Btn_ExitGame.Click += new System.EventHandler(this.Btn_ExitGame_Click);
             // 
             // Btn_StartGame
             // 

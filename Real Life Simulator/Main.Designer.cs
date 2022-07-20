@@ -29,23 +29,24 @@ namespace Real_Life_Simulator
         /// </summary>
         private void InitializeComponent()
         {
-            this.Pn_Main = new System.Windows.Forms.Panel();
+            this.Pnl_Main = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // Pn_Main
+            // Pnl_Main
             // 
-            this.Pn_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pn_Main.Location = new System.Drawing.Point(0, 0);
-            this.Pn_Main.Name = "Pn_Main";
-            this.Pn_Main.Size = new System.Drawing.Size(500, 400);
-            this.Pn_Main.TabIndex = 0;
+            this.Pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_Main.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_Main.Name = "Pnl_Main";
+            this.Pnl_Main.Size = new System.Drawing.Size(1920, 1080);
+            this.Pnl_Main.TabIndex = 0;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 400);
-            this.Controls.Add(this.Pn_Main);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.Pnl_Main);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Real Life Simulator";
@@ -56,7 +57,7 @@ namespace Real_Life_Simulator
 
         #endregion
 
-        private System.Windows.Forms.Panel Pn_Main;
+        private System.Windows.Forms.Panel Pnl_Main;
     }
 }
 

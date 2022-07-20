@@ -1,6 +1,6 @@
 ﻿namespace Real_Life_Simulator
 {
-    partial class GameWindowCtrlNew
+    partial class GameWindowCtrl
     {
         /// <summary> 
         /// Erforderliche Designervariable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Pnl_Container = new System.Windows.Forms.Panel();
+            this.Btn_Inventory = new System.Windows.Forms.Button();
             this.Btn_MainMenu = new System.Windows.Forms.Button();
             this.Btn_Character = new System.Windows.Forms.Button();
-            this.Btn_Inventory = new System.Windows.Forms.Button();
+            this.Pnl_Container = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,15 +49,18 @@
             this.panel1.Size = new System.Drawing.Size(1920, 60);
             this.panel1.TabIndex = 0;
             // 
-            // Pnl_Container
+            // Btn_Inventory
             // 
-            this.Pnl_Container.BackColor = System.Drawing.Color.Teal;
-            this.Pnl_Container.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pnl_Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pnl_Container.Location = new System.Drawing.Point(0, 60);
-            this.Pnl_Container.Name = "Pnl_Container";
-            this.Pnl_Container.Size = new System.Drawing.Size(1920, 960);
-            this.Pnl_Container.TabIndex = 1;
+            this.Btn_Inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Inventory.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Inventory.ForeColor = System.Drawing.Color.White;
+            this.Btn_Inventory.Location = new System.Drawing.Point(262, -1);
+            this.Btn_Inventory.Name = "Btn_Inventory";
+            this.Btn_Inventory.Size = new System.Drawing.Size(200, 60);
+            this.Btn_Inventory.TabIndex = 2;
+            this.Btn_Inventory.Text = "Inventory";
+            this.Btn_Inventory.UseVisualStyleBackColor = true;
+            this.Btn_Inventory.Click += new System.EventHandler(this.Btn_Inventory_Click);
             // 
             // Btn_MainMenu
             // 
@@ -84,26 +87,25 @@
             this.Btn_Character.UseVisualStyleBackColor = true;
             this.Btn_Character.Click += new System.EventHandler(this.Btn_Character_Click);
             // 
-            // Btn_Inventory
+            // Pnl_Container
             // 
-            this.Btn_Inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Inventory.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Inventory.ForeColor = System.Drawing.Color.White;
-            this.Btn_Inventory.Location = new System.Drawing.Point(262, -1);
-            this.Btn_Inventory.Name = "Btn_Inventory";
-            this.Btn_Inventory.Size = new System.Drawing.Size(200, 60);
-            this.Btn_Inventory.TabIndex = 2;
-            this.Btn_Inventory.Text = "Inventory";
-            this.Btn_Inventory.UseVisualStyleBackColor = true;
+            this.Pnl_Container.BackColor = System.Drawing.Color.Teal;
+            this.Pnl_Container.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_Container.Location = new System.Drawing.Point(0, 60);
+            this.Pnl_Container.Name = "Pnl_Container";
+            this.Pnl_Container.Size = new System.Drawing.Size(1920, 1020);
+            this.Pnl_Container.TabIndex = 1;
             // 
-            // GameWindowCtrlNew
+            // GameWindowCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Pnl_Container);
             this.Controls.Add(this.panel1);
-            this.Name = "GameWindowCtrlNew";
-            this.Size = new System.Drawing.Size(1920, 1020);
+            this.Name = "GameWindowCtrl";
+            this.Size = new System.Drawing.Size(1920, 1080);
+            this.Load += new System.EventHandler(this.GameWindowCtrl_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

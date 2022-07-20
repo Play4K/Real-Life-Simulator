@@ -68,17 +68,23 @@
     <Compile Include="CharacterMenuCtrl.Designer.cs">
       <DependentUpon>CharacterMenuCtrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameWindow.cs">
+    <Compile Include="GameWindowOld.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GameWindow.Designer.cs">
-      <DependentUpon>GameWindow.cs</DependentUpon>
+    <Compile Include="GameWindowOld.Designer.cs">
+      <DependentUpon>GameWindowOld.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameWindowCtrlNew.cs">
+    <Compile Include="GameWindowCtrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GameWindowCtrlNew.Designer.cs">
-      <DependentUpon>GameWindowCtrlNew.cs</DependentUpon>
+    <Compile Include="GameWindowCtrl.Designer.cs">
+      <DependentUpon>GameWindowCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InventoryCtrl.Designer.cs">
+      <DependentUpon>InventoryCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="MapForms\BankControl.cs">
       <SubType>UserControl</SubType>
@@ -126,11 +132,14 @@
     <EmbeddedResource Include="CharacterMenuCtrl.resx">
       <DependentUpon>CharacterMenuCtrl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameWindow.resx">
-      <DependentUpon>GameWindow.cs</DependentUpon>
+    <EmbeddedResource Include="GameWindowOld.resx">
+      <DependentUpon>GameWindowOld.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameWindowCtrlNew.resx">
-      <DependentUpon>GameWindowCtrlNew.cs</DependentUpon>
+    <EmbeddedResource Include="GameWindowCtrl.resx">
+      <DependentUpon>GameWindowCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryCtrl.resx">
+      <DependentUpon>InventoryCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MapForms\BankControl.resx">
       <DependentUpon>BankControl.cs</DependentUpon>
@@ -158,6 +167,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,6 +188,7 @@
     <Content Include="Ideen\GameWindow New.jpg" />
     <Content Include="Projekt Pläne.txt" />
     <Content Include="Regeln.txt" />
+    <None Include="Resources\Male Anatomy Turn %28hand drawn%29, Masters Of Anatomy.jpg" />
     <Content Include="Änderungen.txt" />
   </ItemGroup>
   <ItemGroup />

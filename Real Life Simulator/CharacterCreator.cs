@@ -27,15 +27,20 @@ namespace Real_Life_Simulator
             if (Txt_FirstName.Text != "" && Txt_LastName.Text != "" && Lbx_Gender.SelectedIndex >= 0)
             {
                 CharacterCreated();
+
+                // CharacterCreator Fenster (das jetzige) soll sich schließen
                 this.Hide();
-                GameWindow characterMenuObj = new GameWindow();
+
+                // Ins Pnl_Container von Main soll ein bestimmtes Fenster geladen werden
+                GameWindowCtrl gameWindowCtrl = new GameWindowCtrl();
                 Main.mainInstance.PanelContainer.Controls.Clear();
-                Main.mainInstance.PanelContainer.Controls.Add(characterMenuObj);
+                Main.mainInstance.PanelContainer.Controls.Add(gameWindowCtrl);
             }
         }
 
         private void CharacterCreated()
         {
+            //Wenn der Character erstellt wurde, soll folgende Eigenschaften übernommen werden
             GameSession.CurrentPlayer.FirstName = Txt_FirstName.Text;
             GameSession.CurrentPlayer.LastName = Txt_LastName.Text;
             GameSession.CurrentPlayer.Age = 14;

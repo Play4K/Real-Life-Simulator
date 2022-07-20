@@ -1,3 +1,4 @@
 ﻿DATUM		NAME			FUNKTION											BESCHREIBUNG
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 18.7.22		Arsen			Neue GameWindow Menu Erstellung
+20.7.22		Arsen			GameWindow Änderungen durchgeführt, Fenstergröße Einstellungen durchgeführt, Kommentare hinzugefügt

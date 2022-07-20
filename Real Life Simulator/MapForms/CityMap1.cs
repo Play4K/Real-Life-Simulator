@@ -30,7 +30,7 @@ namespace Real_Life_Simulator
         private void Btn_CharacterMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GameWindow characterMenuObj = new GameWindow();
+            GameWindowOld characterMenuObj = new GameWindowOld();
             Main.mainInstance.PanelContainer.Controls.Clear();
             Main.mainInstance.PanelContainer.Controls.Add(characterMenuObj);
         }

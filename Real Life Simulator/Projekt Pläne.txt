@@ -39,7 +39,6 @@
 	OFFEN	-> Keine Instant-Reise Möglichkeit, alles braucht Zeit um den Ort zu erreichen (STANDARD: 2m pro 1s | 1m pro 0,5sek = zu Fuß)
 
 
-
 Spielfunktionen (beschrieben):
 	# Spiel beginnt als ein Weisenkind (ohne Eltern, in dem es mit Hürden verbunden ist, Alter wird noch überlegt)
 	# Man beginnt bei einem Spawnpunkt, von dort aus wenn mein Reisen möchte oder sich allgemein bewegen möchte,
