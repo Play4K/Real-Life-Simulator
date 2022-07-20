@@ -176,7 +176,7 @@
     <Content Include="Dll\VerticalProgressBar.dll" />
     <Content Include="Dll\XanderUI.dll" />
     <Content Include="Ideen\GameWindow New.jpg" />
-    <Content Include="Projekt Päne.txt" />
+    <Content Include="Projekt Pläne.txt" />
     <Content Include="Regeln.txt" />
     <Content Include="Änderungen.txt" />
   </ItemGroup>
