@@ -188,8 +188,8 @@
     <Content Include="Ideen\GameWindow New.jpg" />
     <Content Include="Projekt Pläne.txt" />
     <Content Include="Regeln.txt" />
-    <None Include="Resources\Male Anatomy Turn %28hand drawn%29, Masters Of Anatomy.jpg" />
     <Content Include="Änderungen.txt" />
+    <None Include="Resources\Male Anatomy Turn %28hand drawn%29, Masters Of Anatomy.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
