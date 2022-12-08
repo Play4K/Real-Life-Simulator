@@ -29,18 +29,17 @@ namespace Real_Life_Simulator
             mainInstance = this;
 
             InitializeComponent();
+            //Tmr_GameTime.Start();
         }
-
-        
-        //Panel mainPanel = new Panel();
 
         private void Main_Load(object sender, EventArgs e)
         {
             StartPosition = FormStartPosition.CenterScreen;
-            GameMenuCtrl gameMenuCtrl = new GameMenuCtrl();
-            Main.mainInstance.Size = new Size(670 + 16, 298 + 38);
+            Btn_Settings gameMenuCtrl = new Btn_Settings();
+            //Main.mainInstance.Size = new Size(670 + 16, 298 + 38);
             Pnl_Main.Controls.Add(gameMenuCtrl);
             gameMenuCtrl.Show();
+            
         }
 
         public Panel PanelContainer
@@ -49,9 +48,19 @@ namespace Real_Life_Simulator
             set { Pnl_Main = value; }
         }
 
+        public Timer Timer
+        {
+            get { return Tmr_GameTime; }
+        }
+
         public void WindowsPreset()
         {
             this.Size = new Size(WindowsWidth, WindowsHeight);
+        }
+
+        private void Tmr_GameTime_Tick(object sender, EventArgs e)
+        {
+            //GameSession.GameTimeSession.GameTime = GameSession.GameTimeSession.GameTime.AddSeconds(1);
         }
     }
 }

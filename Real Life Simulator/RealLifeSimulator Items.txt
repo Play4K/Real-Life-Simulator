@@ -1,0 +1,89 @@
+#Essen
+100	Weißbrot					FERTIG
+101	Schwarzbrot					FERTIG
+102	Vollkornbrot
+
+
+
+
+#Trinken
+1	Wasser						FERTIG
+2	Mineralwasser				FERTIG
+3	Coca-Cola					FERTIG
+4	Pepsi						ERTIG
+5	Apfelsaft					FERTIG
+6	Orangensaft					FERTIG
+
+
+
+
+#Kopfbedeckung universal
+1000
+
+1069
+
+#Kopfbedeckung weiblich
+1070
+
+1099
+
+#Nacken universal
+1100	
+
+1199
+
+#Brillen universal
+1200
+
+1299
+
+#Oberteil männlich
+1300
+
+1499
+
+#Oberteil weiblich
+1500
+
+1699
+
+#Hosen männlich
+1700
+
+1799
+
+#Hosen weiblich
+1800
+
+1899
+
+#Gürtel
+1900
+
+1999
+
+#Schuhe männlich
+2000
+
+2199
+
+#Schuhe weiblich
+2200
+
+2399
+
+#Socken universal
+2400
+
+2499
+
+
+
+#Medikamente
+5000	Pflaster
+5001	Spritze
+5002	
+
+
+5100	Aspirin C
+5101	Wundensalbe

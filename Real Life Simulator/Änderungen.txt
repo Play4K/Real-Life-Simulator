@@ -1,3 +1,5 @@
 ﻿DATUM		NAME			FUNKTION											BESCHREIBUNG
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 18.7.22		Arsen			Neue GameWindow Menu Erstellung
+20.7.22		Arsen			GameWindow Bearbeitung, Code-Kommentierung,
+27.7.22		Arsen			Inventar Fundamt Design eingefügt und bearbeitet, Character Menü bearbeitet, Neue Welt-Karte erstellt

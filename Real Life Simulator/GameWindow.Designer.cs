@@ -1,7 +1,7 @@
 ﻿
 namespace Real_Life_Simulator
 {
-    partial class GameWindowOld
+    partial class GameWindow
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Real_Life_Simulator
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameWindowOld));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameWindow));
             this.Lbl_Balance = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Lbl_Gender = new System.Windows.Forms.Label();

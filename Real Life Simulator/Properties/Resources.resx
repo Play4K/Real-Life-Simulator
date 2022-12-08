@@ -121,4 +121,7 @@
   <data name="Male Anatomy Turn (hand drawn), Masters Of Anatomy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Male Anatomy Turn (hand drawn), Masters Of Anatomy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ObstGemüseRegal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\ObstGemüseRegal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

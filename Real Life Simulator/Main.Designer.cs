@@ -29,7 +29,9 @@ namespace Real_Life_Simulator
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Pnl_Main = new System.Windows.Forms.Panel();
+            this.Tmr_GameTime = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // Pnl_Main
@@ -39,6 +41,11 @@ namespace Real_Life_Simulator
             this.Pnl_Main.Name = "Pnl_Main";
             this.Pnl_Main.Size = new System.Drawing.Size(1920, 1080);
             this.Pnl_Main.TabIndex = 0;
+            // 
+            // Tmr_GameTime
+            // 
+            this.Tmr_GameTime.Interval = 1000;
+            this.Tmr_GameTime.Tick += new System.EventHandler(this.Tmr_GameTime_Tick);
             // 
             // Main
             // 
@@ -58,6 +65,7 @@ namespace Real_Life_Simulator
         #endregion
 
         private System.Windows.Forms.Panel Pnl_Main;
+        private System.Windows.Forms.Timer Tmr_GameTime;
     }
 }
 

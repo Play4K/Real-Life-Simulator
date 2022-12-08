@@ -1,0 +1,19 @@
+﻿
+Stadt				Bezirke				Platz
+					daweil 1			SCHULE
+										APOTHEKE
+										ZAHNARZT
+										ALLGEMEINARZT
+										POLIZEI
+										KRANKENHAUS
+										SCHMIED
+										SPORTHALLE
+										LEBENSMITTELGESCHÄFT
+										MÜLLER
+										BIPA
+										ZUGSTATION
+										BUSSTATIONEN
+										UBAHN
+										BÄCKEREI
+										verschiedenste Firmen
+										SCHLOSSEREI

@@ -1,7 +1,7 @@
-﻿- SPIEL
+﻿ - SPIEL
 	OFFEN	-> Speicherfunktion (Neu erstelltes Spiel mit allen Informationen speichern können)
 	OFFEN	-> Tag und Nacht
-	OFFEN	-> Ingame Zeit
+	IN BEARBEITUNG	-> Ingame Zeit
 	OFFEN	-> Essen, Trinken, Schlafen
 	OFFEN	-> AI-Mensch mit Sprechfunktion
 	OFFEN	-> Sprechfunktion
@@ -15,12 +15,14 @@
 	OFFEN	-> Gesundheitssystem: Hunger, Durst, Schlaf, Krankheiten
 	OFFEN	-> Charaktereigenschaften (vorteilhaft und nachteilhaft, jede Eigenschaft hat auch Stufen, in bestimmten Situationen werden bestimmte Eigenschaften auch gebraucht)
 	OFFEN	-> Körpertemperatur
-	OFFEN	-> Kleidung Anziehfunktion -> Körpertemperatur
+	IN BEARBEITUNG	-> Kleidung Anziehfunktion -> Körpertemperatur
 	OFFEN	-> Krankheitssystem, für jede Krankheit gibt es auch Gegenmittel (von Real-Life nachmachen)
 	OFFEN	-> Emotionen, Gefühle, Laune (steigert/verringert abhängig von vielen verschiedenen Paramtern)
 	OFFEN	-> Wissen in verschiedenste Bereiche können erlangt werden und sind Stufenweise (Wissenslevelmäßig) festgesetzt,
 					das Wissen kann durch lesen von Büchern, in dem Bereich arbeiten, etc gesteigert werden
 	OFFEN	-> Körperbau (wird noch überlegt)
+	OFFEN
+	-> Wäsche beginnt nach einer Zeit und durch andere Faktoren zu stinken und muss gewaschen oder gewechselt werden, ansonsten sinkt das Wohlgefühl und andere Faktoren
 
 - FINAZIELL
 	OFFEN	-> Arbeitsmöglichkeit
@@ -37,6 +39,7 @@
 
 - MAPS
 	OFFEN	-> Keine Instant-Reise Möglichkeit, alles braucht Zeit um den Ort zu erreichen (STANDARD: 2m pro 1s | 1m pro 0,5sek = zu Fuß)
+	IN BEARBEITUNG	-> Koordinations-System womit gereist wird (zu Fuß oder anders)
 
 
 Spielfunktionen (beschrieben):
@@ -44,3 +47,12 @@ Spielfunktionen (beschrieben):
 	# Man beginnt bei einem Spawnpunkt, von dort aus wenn mein Reisen möchte oder sich allgemein bewegen möchte,
 					hinterlegt man eine Strecke, diese Strecke wird standardmäßig zu Fuß hinterlegt, sollte man ein
 					Fahrrad, Auto, Bus, Zug, Flugzeug haben kann man schneller sein
+
+
+
+
+
+1) Ausgewählte Items aus dem Inventar sollen in selected Item Information mit all deren Informationen angezeigt werden
+2) GameItems haben ihre eigene Icons/Bilder
+3) Beim Anmelden kann man seine Account-Daten (nur Username momentan speichern können), beim klicken wird dieser Username direkt in Txt_Username geschrieben und man muss dann nur sein Passwort schreiben
+4) Passwort vergessen Funktion hinzufügen

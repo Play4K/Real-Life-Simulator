@@ -1,26 +1,35 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Real_Life_Simulator
 {
-    class Player : INotifyPropertyChanged
+    public class Player : INotifyPropertyChanged
     {
         private string _firstName;
         private string _lastName;
         private string _fullname;
         private string _gender;
+        private string _job;
         private int _age;
-        private int _health;
-        private int _hunger;
-        private int _thirst;
-        private int _energy;
-        private int _exhaustion;
+        private double _health;
+        private double _hunger;
+        private double _thirst;
+        private double _energy;
+        private double _exhaustion;
         private double _balance;
-        
+
+        public List<Diseases> PlayerDiseases = new List<Diseases>();
+        private SQLConnection sqlConnection = new SQLConnection();
+
 
         public Player()
         {
@@ -39,7 +48,7 @@ namespace Real_Life_Simulator
             set
             {
                 if (value != _firstName)
-                _firstName = value;
+                    _firstName = value;
                 OnPropertyChanged("FirstName");
             }
         }
@@ -49,7 +58,7 @@ namespace Real_Life_Simulator
             set 
             {
                 if (value != _lastName)
-                _lastName = value;
+                    _lastName = value;
                 OnPropertyChanged("LastName");
             }
         }
@@ -59,7 +68,8 @@ namespace Real_Life_Simulator
             get { return _firstName + " " + _lastName; }
             set
             {
-                FullName = value;
+                if (value != _fullname)
+                    _fullname = value;
                 OnPropertyChanged("FullName");
             }
         }
@@ -69,8 +79,19 @@ namespace Real_Life_Simulator
             set 
             {
                 if (value != _gender)
-                _gender = value;
+                    _gender = value;
                 OnPropertyChanged("Gender");
+            }
+        }
+
+        public string Job
+        {
+            get { return _job; }
+            set
+            {
+                if (value != _job)
+                    _job = value;
+                OnPropertyChanged("Job");
             }
         }
         public int Age
@@ -79,12 +100,12 @@ namespace Real_Life_Simulator
             set 
             {
                 if (value != _age)
-                _age = value;
+                    _age = value;
                 OnPropertyChanged("Age");
             }
         }
 
-        public int Health
+        public double Health
         {
             get { return _health; }
             set
@@ -94,45 +115,45 @@ namespace Real_Life_Simulator
                 OnPropertyChanged("Health");
             }
         }
-        public int Hunger
+        public double Hunger
         {
             get { return _hunger; }
             set 
             { 
                 if (value != _hunger)
-                _hunger = value;
+                    _hunger = value;
                 OnPropertyChanged("Hunger");
             }
         }
-        public int Thirst
+        public double Thirst
         {
             get { return _thirst; }
             set 
             { 
                 if (value != _thirst)
-                _thirst = value;
+                    _thirst = value;
                 OnPropertyChanged("Thirst");
             }
         }
 
-        public int Energy
+        public double Energy
         {
             get { return _energy; }
             set 
             { 
                 if (value != _energy)
-                _energy = value;
+                    _energy = value;
                 OnPropertyChanged("Energy");
             }
         }
 
-        public int Exhaustion
+        public double Exhaustion
         {
             get { return _exhaustion; }
             set 
             { 
                 if (value != _exhaustion)
-                _exhaustion = value;
+                    _exhaustion = value;
                 OnPropertyChanged("Exhaustion");
             }
         }
@@ -148,5 +169,38 @@ namespace Real_Life_Simulator
             }
         }
 
+        public void Sleep(int hours)
+        {
+            //Body gains 10 Energy for 1 hour sleep
+            MessageBox.Show("Player slept");
+            Energy += (hours * 10);
+        }
+
+        
+
+        //public double BodyGetsTiredNaturally(double seconds)
+        //{
+        //    SQLConnection sqlConnection = new SQLConnection();
+        //    sqlConnection.con.Open();
+        //    sqlConnection.cmd = new MySqlCommand("SELECT * FROM tbl_players WHERE AccountID='" + GameSession.connectedAccountID + "' AND Id='" + GameSession.choosenPlayerID + "'", sqlConnection.con);
+        //    sqlConnection.sqlDataReader = sqlConnection.cmd.ExecuteReader();
+        //    if (sqlConnection.sqlDataReader.Read())
+        //    {
+        //        GameSession.gameSession.currentPlayer.Energy = Convert.ToDouble(sqlConnection.sqlDataReader["Energy"]);
+        //        sqlConnection.sqlDataReader.Close();
+        //    }
+        //    sqlConnection.con.Close();
+
+        //    SQLConnection sqlConnection2 = new SQLConnection();
+
+        //    sqlConnection2.con.Open();
+        //    sqlConnection2.cmd = new MySqlCommand("UPDATE tbl_players SET Energy='" + GameSession.gameSession.currentPlayer.Energy + "' WHERE AccountID='" + GameSession.connectedAccountID + "' AND Id='" + GameSession.choosenPlayerID + "'", sqlConnection2.con);
+        //    sqlConnection2.cmd.Parameters.AddWithValue("@Energy", GameSession.gameSession.currentPlayer.Energy);
+        //    sqlConnection2.cmd.ExecuteNonQuery();
+        //    sqlConnection2.con.Close();
+
+        //    return GameSession.gameSession.currentPlayer.Energy -= seconds;
+
+        //}
     }
 }

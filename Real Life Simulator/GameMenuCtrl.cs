@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Real_Life_Simulator
 {
-    public partial class GameMenuCtrl : UserControl
+    public partial class Btn_Settings : UserControl
     {
-        public GameMenuCtrl()
+        public Btn_Settings()
         {
             InitializeComponent();
         }
@@ -20,15 +20,15 @@ namespace Real_Life_Simulator
         private void Btn_StartGame_Click(object sender, EventArgs e)
         {
             // Sobald neues Spiel gestartet wird, soll in das Panel in Main, das CharacterCreator Fenster geladen werden
-            CharacterCreator characterCreatorObj = new CharacterCreator();
+            AccountCtrl accountCtrl = new AccountCtrl();
             Main.mainInstance.PanelContainer.Controls.Clear();
-            Main.mainInstance.PanelContainer.Controls.Add(characterCreatorObj);
+            Main.mainInstance.PanelContainer.Controls.Add(accountCtrl);
 
             // wenn das Panel folgendes Fenster beinhaltet, soll das Main Fenster die folgende Fenstergröße haben
-            if (Main.mainInstance.PanelContainer.Controls.Contains(characterCreatorObj))
+            if (Main.mainInstance.PanelContainer.Controls.Contains(accountCtrl))
             {
                 //(Breite, Höhe)
-                Main.mainInstance.Size = new Size(670 + 16, 298 + 38);
+                //Main.mainInstance.Size = new Size(670 + 16, 298 + 38);
             }
         }
 

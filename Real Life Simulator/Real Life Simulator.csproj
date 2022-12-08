@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,12 +48,48 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\DLL\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.30\lib\net48\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,19 +99,57 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.30\lib\net48\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
     <Reference Include="VerticalProgressBar">
       <HintPath>..\..\..\DLL\VerticalProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="XanderUI">
       <HintPath>..\..\..\DLL\XanderUI.dll</HintPath>
     </Reference>
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.30\lib\net48\ZstdNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharacterCreator.cs">
+    <Compile Include="Locations\FirstApparment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Locations\FirstApparment.Designer.cs">
+      <DependentUpon>FirstApparment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\KrankenhausCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Locations\KrankenhausCtrl.Designer.cs">
+      <DependentUpon>KrankenhausCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\MediamarktCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Locations\MediamarktCtrl.Designer.cs">
+      <DependentUpon>MediamarktCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicine\Diseases.cs" />
+    <Compile Include="Locations\ApothekeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Locations\ApothekeCtrl.Designer.cs">
+      <DependentUpon>ApothekeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseNotificationClass.cs" />
+    <Compile Include="Locations\BillaCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Locations\BillaCtrl.Designer.cs">
+      <DependentUpon>BillaCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountCtrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CharacterCreator.Designer.cs">
-      <DependentUpon>CharacterCreator.cs</DependentUpon>
+      <DependentUpon>AccountCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="CharacterMenuCtrl.cs">
       <SubType>UserControl</SubType>
@@ -68,12 +157,9 @@
     <Compile Include="CharacterMenuCtrl.Designer.cs">
       <DependentUpon>CharacterMenuCtrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameWindowOld.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GameWindowOld.Designer.cs">
-      <DependentUpon>GameWindowOld.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Core.cs" />
+    <Compile Include="DataGridViewHandler.cs" />
+    <Compile Include="GameItems.cs" />
     <Compile Include="GameWindowCtrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,17 +172,30 @@
     <Compile Include="InventoryCtrl.Designer.cs">
       <DependentUpon>InventoryCtrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="MapForms\BankControl.cs">
+    <Compile Include="ItemCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemCreator.Designer.cs">
+      <DependentUpon>ItemCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\Kleidungsgeschäft.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MapForms\BankControl.Designer.cs">
+    <Compile Include="Locations\Kleidungsgeschäft.Designer.cs">
+      <DependentUpon>Kleidungsgeschäft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\Location.cs" />
+    <Compile Include="Locations\LocationCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Locations\LocationCtrl.Designer.cs">
+      <DependentUpon>LocationCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapForm\BankControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapForm\BankControl.Designer.cs">
       <DependentUpon>BankControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MapForms\CityMap1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MapForms\CityMap1.Designer.cs">
-      <DependentUpon>CityMap1.cs</DependentUpon>
     </Compile>
     <Compile Include="GameMenuCtrl.cs">
       <SubType>UserControl</SubType>
@@ -111,29 +210,60 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="MapForms\GroceryStoreControl.cs">
+    <Compile Include="MapForm\GroceryStoreControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MapForms\GroceryStoreControl.Designer.cs">
+    <Compile Include="MapForm\GroceryStoreControl.Designer.cs">
       <DependentUpon>GroceryStoreControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="MapForms\PharmacyControl.cs">
+    <Compile Include="MapForm\PharmacyControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MapForms\PharmacyControl.Designer.cs">
+    <Compile Include="MapForm\PharmacyControl.Designer.cs">
       <DependentUpon>PharmacyControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="SQLConnection.cs" />
+    <Compile Include="PointCoordinate.cs" />
+    <Compile Include="Locations\SupermarketCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Locations\SupermarketCtrl.Designer.cs">
+      <DependentUpon>SupermarketCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="World\World.cs" />
+    <Compile Include="World\WorldFactory.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CharacterCreator.resx">
-      <DependentUpon>CharacterCreator.cs</DependentUpon>
+    <Compile Include="World\WorldCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="World\WorldCtrl.Designer.cs">
+      <DependentUpon>WorldCtrl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountCtrl.resx">
+      <DependentUpon>AccountCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\FirstApparment.resx">
+      <DependentUpon>FirstApparment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\KrankenhausCtrl.resx">
+      <DependentUpon>KrankenhausCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\ApothekeCtrl.resx">
+      <DependentUpon>ApothekeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\BillaCtrl.resx">
+      <DependentUpon>BillaCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CharacterMenuCtrl.resx">
       <DependentUpon>CharacterMenuCtrl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GameWindowOld.resx">
-      <DependentUpon>GameWindowOld.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameWindowCtrl.resx">
       <DependentUpon>GameWindowCtrl.cs</DependentUpon>
@@ -141,11 +271,17 @@
     <EmbeddedResource Include="InventoryCtrl.resx">
       <DependentUpon>InventoryCtrl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MapForms\BankControl.resx">
-      <DependentUpon>BankControl.cs</DependentUpon>
+    <EmbeddedResource Include="ItemCreator.resx">
+      <DependentUpon>ItemCreator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MapForms\CityMap1.resx">
-      <DependentUpon>CityMap1.cs</DependentUpon>
+    <EmbeddedResource Include="Locations\Kleidungsgeschäft.resx">
+      <DependentUpon>Kleidungsgeschäft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\LocationCtrl.resx">
+      <DependentUpon>LocationCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapForm\BankControl.resx">
+      <DependentUpon>BankControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameMenuCtrl.resx">
       <DependentUpon>GameMenuCtrl.cs</DependentUpon>
@@ -153,11 +289,14 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MapForms\GroceryStoreControl.resx">
+    <EmbeddedResource Include="MapForm\GroceryStoreControl.resx">
       <DependentUpon>GroceryStoreControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MapForms\PharmacyControl.resx">
+    <EmbeddedResource Include="MapForm\PharmacyControl.resx">
       <DependentUpon>PharmacyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\MediamarktCtrl.resx">
+      <DependentUpon>MediamarktCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -169,6 +308,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Locations\SupermarketCtrl.resx">
+      <DependentUpon>SupermarketCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="World\WorldCtrl.resx">
+      <DependentUpon>WorldCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -183,14 +332,41 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Images\ObstGemüseRegal.jpg" />
     <Content Include="Dll\VerticalProgressBar.dll" />
     <Content Include="Dll\XanderUI.dll" />
     <Content Include="Ideen\GameWindow New.jpg" />
     <Content Include="Projekt Pläne.txt" />
-    <Content Include="Regeln.txt" />
-    <Content Include="Änderungen.txt" />
     <None Include="Resources\Male Anatomy Turn %28hand drawn%29, Masters Of Anatomy.jpg" />
+    <None Include="Resources\Image1.bmp" />
+    <Content Include="Resources\Images\Locations\Bäckerei.jpg" />
+    <Resource Include="Resources\Images\Locations\Ubahn.jpg" />
+    <Resource Include="Resources\Images\Locations\ZentralpunktWien.jpeg" />
+    <Content Include="WoBinIchStehenGeblieben.txt" />
+    <Content Include="World\World.txt" />
+    <Content Include="Änderungen.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\Images\Character\Belt\" />
+    <Folder Include="Resources\Images\Character\Glasses\" />
+    <Folder Include="Resources\Images\Character\Headgear\" />
+    <Folder Include="Resources\Images\Character\Neck\" />
+    <Folder Include="Resources\Images\Character\Pants\" />
+    <Folder Include="Resources\Images\Character\Shoes\" />
+    <Folder Include="Resources\Images\Character\Socks\" />
+    <Folder Include="Resources\Images\Character\Top\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

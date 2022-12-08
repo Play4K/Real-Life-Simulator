@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Btn_Maps = new System.Windows.Forms.Button();
             this.Btn_Inventory = new System.Windows.Forms.Button();
             this.Btn_MainMenu = new System.Windows.Forms.Button();
             this.Btn_Character = new System.Windows.Forms.Button();
             this.Pnl_Container = new System.Windows.Forms.Panel();
+            this.Tmr_GameTime = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,6 +43,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.Btn_Maps);
             this.panel1.Controls.Add(this.Btn_Inventory);
             this.panel1.Controls.Add(this.Btn_MainMenu);
             this.panel1.Controls.Add(this.Btn_Character);
@@ -48,6 +52,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1920, 60);
             this.panel1.TabIndex = 0;
+            // 
+            // Btn_Maps
+            // 
+            this.Btn_Maps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Maps.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Maps.ForeColor = System.Drawing.Color.White;
+            this.Btn_Maps.Location = new System.Drawing.Point(461, -1);
+            this.Btn_Maps.Name = "Btn_Maps";
+            this.Btn_Maps.Size = new System.Drawing.Size(200, 60);
+            this.Btn_Maps.TabIndex = 3;
+            this.Btn_Maps.Text = "Maps";
+            this.Btn_Maps.UseVisualStyleBackColor = true;
+            this.Btn_Maps.Click += new System.EventHandler(this.Btn_Maps_Click);
             // 
             // Btn_Inventory
             // 
@@ -97,6 +114,11 @@
             this.Pnl_Container.Size = new System.Drawing.Size(1920, 1020);
             this.Pnl_Container.TabIndex = 1;
             // 
+            // Tmr_GameTime
+            // 
+            this.Tmr_GameTime.Interval = 1000;
+            this.Tmr_GameTime.Tick += new System.EventHandler(this.Tmr_GameTime_Tick);
+            // 
             // GameWindowCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,5 +140,7 @@
         private System.Windows.Forms.Button Btn_MainMenu;
         private System.Windows.Forms.Button Btn_Character;
         private System.Windows.Forms.Button Btn_Inventory;
+        private System.Windows.Forms.Button Btn_Maps;
+        private System.Windows.Forms.Timer Tmr_GameTime;
     }
 }

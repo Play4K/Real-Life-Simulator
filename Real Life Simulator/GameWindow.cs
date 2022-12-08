@@ -11,10 +11,10 @@ using VerticalProgressBar;
 
 namespace Real_Life_Simulator
 {
-    public partial class GameWindowOld : UserControl, INotifyPropertyChanged
+    public partial class GameWindow : UserControl, INotifyPropertyChanged
     {
 
-        public GameWindowOld()
+        public GameWindow()
         {
             InitializeComponent();
         }
